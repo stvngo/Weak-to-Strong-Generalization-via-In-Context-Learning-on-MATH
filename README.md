@@ -19,24 +19,7 @@ We measure **PGR (Performance Gap Recovered)** by comparing three conditions:
 
 The purpose of this experiment is to determine if we can generalize the idea of weak human supervision of superior models (LLM superalignment) to weaker models overseeing strong models by simulating this behavior through k-shot prompting the stronger model with weak labelled data and determining the performance gap.
 
----
-
-## Repo Structure
-
-├── notebooks/
-│ └── weak_to_strong_math.ipynb # Main Colab/Notebook workflow
-├── src/
-│ ├── banks.py # Build gold & weak few-shot banks (+ caching)
-│ ├── eval.py # Batch calls, parsing, grading, PGR
-│ ├── plotting.py # Plotly/Matplotlib helpers
-│ └── utils.py # Sampling, extraction, config
-├── cache/ # Weak-bank generations (auto-created)
-├── slides/ # (Optional) exported PDF/figures
-├── README.md
-└── requirements.txt
-
-
-> If you’re only using Colab, the notebook is self-contained. The `src/` modules mirror the same logic for local runs.
+> If you’re using Colab, the notebook is self-contained. 
 
 ---
 
